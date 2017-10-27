@@ -26,16 +26,16 @@ export class UserComponent implements OnInit {
   constructor(private getphotoService:GetphotoService) { }
   ngOnInit() {
 
-    this.my_name = "Falcon The Super Carrier"
+    this.my_name = "abc"
     this.age = 69;
     this.email = "my_email@gmail.com";
     this.address = {
-      street: "Charansanitwong",
+      street: "123",
       city: "Bangkok",
       province: "Bangkok",
-      postcode: "10700"
+      postcode: "00000"
     }
-    this.skills = ["Gaming", "Speaking", "Eating", "Sleeping"];
+    this.skills = ["Eat", "Sleep", "Play"];
 
     this.getphotoService.getPhotoList().subscribe((response) => {
       this.photoList = response;
